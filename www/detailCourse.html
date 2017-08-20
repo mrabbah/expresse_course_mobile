@@ -1,0 +1,39 @@
+<div data-role="page" id="detailCourse">
+            <div data-role="header" data-position="fixed">
+                <a data-role="button" data-rel="back" href="#" data-icon="back"
+                   data-iconpos="left" class="ui-btn-left">
+                    Retour
+                </a>
+                <h4>Détail de la course</h4>
+                <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
+                    <a href="#menulistDetailCourse" data-role="button" data-icon="bullets">Menu</a>
+                </div>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div id='fmap_canvas' style='width:100%;height:300px;'>                    
+                </div>
+
+                <div id="listDetailCourse">
+
+                </div>
+            </div>      
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="javascript:void(0)" data-transition="slide" data-icon="home" class="accueil">Accueil</a></li>
+                        <li><a href="javascript:void(0)" data-transition="slide" data-icon="plus" class="newCourse" >Nouvelle course</a></li>
+                        <li><a href="javascript:void(0)" data-transition="slide" data-icon="star" class="ui-btn-active mesCourse">Mes courses</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="panel" id="menulistDetailCourse" data-position="left" data-display="overlay">
+                <ul data-role="listview" data-divider-theme="b">
+                    <li class="menuTitle" data-role="list-divider"></li>
+                    <li id="updateCompte"><a href="javascript:void(0)" data-transition="slide" class="updateCompte">Modifier mon compte</a></li>
+                    <li id="deconnecter"><a href="javascript:void(0)" data-transition="slide" class="deconnecter">Déconnecter</a></li>
+                    <li><a href="#accueil" data-transition="slide">Tracking</a></li>
+                    <li><a href="javascript:void(0)" data-transition="slide" class="newCourse">Nouvelle course</a></li>
+                    <li><a href="javascript:void(0)" data-transition="slide" class="mesCourse">Mes courses</a></li>
+                </ul>
+            </div>
+        </div>

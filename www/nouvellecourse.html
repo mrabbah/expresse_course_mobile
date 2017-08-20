@@ -1,0 +1,117 @@
+<div data-role="page" id="nouvellecourse">
+     
+            <div data-role="header" data-position="fixed">
+                <a data-role="button" data-rel="back" href="#" data-icon="back"
+                   data-iconpos="left" class="ui-btn-left">
+                    Retour
+                </a>
+                <h4>Tâches</h4>
+                <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
+                    <a href="index.html" data-role="button" data-icon="home">Accueil</a>
+                </div>                
+            </div>
+            <div role="main" class="ui-content">                          
+                <p id="texteinfo" style="margin-top:-5px;color:red;"></p>       
+                <div id="map" style="width:100%;"> </div>
+                <input id="pac-input" class="controls" type="text"
+                    placeholder="Rechercher un endroit" />  
+                <a href="#" id="locationBtn" class="ui-btn ui-btn-d ui-icon-location ui-btn-icon-notext ui-corner-all"></a>
+                <a href="#" id="repertoireBtn" class="ui-btn ui-btn-d ui-icon-bullets ui-btn-icon-notext ui-corner-all"></a>
+                <a href="#" id="terminerBtn" class="ui-btn ui-mini ui-btn-c">Suivant</a> 
+                <!-- Div carnet adresse -->
+                    <div class="divcarnet">
+                        <div class="divcarnetwrapper"></div> 
+                        <div class="divcarnetresult">
+                            <ul data-role="listview" data-filter="true" data-filter-placeholder="Filtrer votre carnet adresse" data-inset="true" id="carnet">
+                                                              
+                            </ul>
+                        </div>
+                        <div class="divcarnetcancel">
+                            <a href="#" id="cancelCarnetBtn" class="ui-btn ui-mini ui-btn-c">Annuler</a>                        
+                        </div>
+                    </div>
+                    <!-- Fin div carnet adresse -->
+            </div>  
+            
+            <div data-role="popup" id="panelQuestionSaveEndroit" class="ui-corner-all">
+                <div style="padding : 10px 20px;">
+                    <p>Voulez vous enregistrer l'endroit choisi dans votre carnet d'adresse?</p>
+                    <a href="#" id="saveEndroitOk" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Oui</a> 
+                    <a href="#" id="saveEndroitNotOk" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Non</a> 
+                </div>
+            </div>
+            <div data-role="popup" id="panelSaveEndroit" class="ui-corner-all">
+                <div style="padding : 10px 20px;z-index:9999;">
+                    Quel nom vous voulez donner à cet endroit
+                    <input type="text"  id="nomendroit" />
+                    <a href="#" id="saveNomEndroitOk" class="ui-btn ui-mini ui-btn-a ui-btn-inline">OK</a> 
+                    <!--<a href="#" id="cancelSaveEndroit" data-rel="back" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Annuler</a>-->
+                </div>
+            </div>
+            <div data-role="popup" id="descriptionTache" class="ui-corner-all">
+                <div style="padding : 10px 20px;">
+                    <p id="textQueDoisFaire"></p>
+                    <textarea rows="8"   id="descriptiontache" ></textarea>
+                    <a href="#" id="terminerDescriptionTache" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Suivant</a> 
+                    <!--<a href="#" id="cancelDescriptionTache" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Annuler</a> -->
+                </div>
+            </div>  
+            <div data-role="popup" id="questionAchatEtape1" class="ui-corner-all">
+                <div style="padding : 10px 20px;">
+                    <p>Est ce que vous voulez préciser l'endroit d'achat?</p>                    
+                    <a href="#" id="ouiQuestionAchatEtape1" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Oui</a> 
+                    <a href="#" id="nonQuestionAchatEtape1" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Non</a> 
+                </div>
+            </div> 
+            <div data-role="popup" id="questionAchatEtapeNplus1" class="ui-corner-all">
+                <div style="padding : 10px 20px;">
+                    <p>Voulez vous indiquer d'autres endroits d'achat?</p>                    
+                    <a href="#" id="ouiQuestionAchatNplus1" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Oui</a> 
+                    <a href="#" id="nonQuestionAchatNplus1" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Non</a> 
+                </div>
+            </div>  
+            <div data-role="popup" id="questionMessagerieEtapeNplus1" class="ui-corner-all">
+                <div style="padding : 10px 20px;">
+                    <p>Voulez vous indiquer d'autres endroits de livraison?</p>                    
+                    <a href="#" id="ouiQuestionMessagerieNplus1" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Oui</a> 
+                    <a href="#" id="nonQuestionMessagerieNplus1" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Non</a> 
+                </div>
+            </div>  
+            <div data-role="popup" id="questionAdministrationEtapeNplus1" class="ui-corner-all">
+                <div style="padding : 10px 20px;">
+                    <p>Voulez vous indiquer d'autres tâches administratives?</p>                    
+                    <a href="#" id="ouiQuestionAdministrationNplus1" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Oui</a> 
+                    <a href="#" id="nonQuestionAdministrationNplus1" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Non</a> 
+                </div>
+            </div> 
+            <div data-role="popup" id="recapDiv" class="ui-corner-all">
+                <div style="padding : 10px 20px;">
+                    <p>Voulez vous soumettre la course?</p>                    
+                    <a href="#" id="ouiQuestionRecap" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Valider</a> 
+                    <a href="#" id="nonQuestionRecap" class="ui-btn ui-mini ui-btn-a ui-btn-inline">Annuler</a> 
+                    <!--<hr/>
+                    <p><b><u>Récapitulaif de la course :</u></b></p>-->
+                    
+                </div>
+            </div>  
+            <div data-role="popup" id="popupDialog" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;">
+                <div role="main" class="ui-content">
+                    <h3 class="ui-title">Votre course a été enregistrée avec succés.</h3>
+                    <a href="typeservices.html" class="ui-btn ui-btn-d ui-corner-all" data-transition="flow">Nouvelle course</a>
+                    <a href="mescourses.html" class="ui-btn ui-btn-d ui-corner-all TrackerHistorique" data-transition="flow">Tracker cette course</a>
+                </div>
+            </div>   
+            <div data-role="popup" id="popupInfoMessagerie" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;">
+                <div role="main" class="ui-content">
+                    <h3 class="ui-title">Etape 2: Veuillez indiquez l'endroit de livraison.</h3>
+                    <a href="#" class="ui-btn ui-corner-all ui-btn-inline" id="okInfoMessagerie" data-transition="flow">OK</a>
+                </div>
+            </div>
+            <div data-role="popup" id="popupQuestionAchatMultiEndroit" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;">
+                <div role="main" class="ui-content">
+                    <h3 class="ui-title">Le coursier doit acheter votre commande depuis plusieurs endroits ou d'un seul endroit?</h3>
+                    <a href="#" class="ui-btn ui-corner-all ui-btn-inline" id="achatUnSeulEndroitBtn" data-transition="flow">Un seul</a>
+                    <a href="#" class="ui-btn ui-corner-all ui-btn-inline" id="achatPlusieursEndroitBtn" data-transition="flow">Plusieurs</a>
+                </div>
+            </div>                             
+        </div>

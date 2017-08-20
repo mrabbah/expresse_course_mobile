@@ -1,0 +1,25 @@
+<div data-role="page" id="tracking">
+ 
+    <div data-role="header" data-position="fixed">
+        <a data-role="button" data-rel="back" href="#" data-icon="back"
+           data-iconpos="left" class="ui-btn-left">
+            Retour
+        </a>               
+        <h4>Tracking</h4>
+        <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
+            <a href="#menulistTracking" data-role="button" data-rel="popup" data-transation="slideup"  data-icon="gear">Actions...</a>
+        </div>
+    </div>
+    <div data-role="main" class="ui-content">                                
+          <div id="map" ></div>
+          <a href="#" data-transition="slide" id="details" class="ui-shadow ui-btn ui-btn-c">Détails</a>     
+    </div>                  
+   <div data-role="popup" id="menulistTracking" >
+        <ul data-role="listview" data-inset="true" style="min-width:210px" data-divider-theme="b">
+            <li class="menuTitle" data-role="list-divider">Choisir une action</li>
+            <li><a href="javascript:void(0)" data-transition="slide" id="appelercoursier">Appeler coursier</a></li>
+            <!--<li id="buttonchat"><a href="javascript:void(0)" data-transition="slide" id="voirmessages">Chatter avec coursier</a></li>  -->
+            <li><a href="javascript:void(0)" id="fermermenu" data-transition="slide" >Fermer</a></li>                    
+        </ul>
+    </div>
+</div>

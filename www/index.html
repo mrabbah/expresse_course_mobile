@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.external-png-1.4.5.min.css" />
+        <!--<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />-->
+        <link rel="stylesheet" href="css/jquery.mobile.inline-png-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.inline-svg-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/nouvellecourse.css" />
+        <link href="css/jquery.mobile.iscrollview.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="css/jquery.mobile.iscrollview-pull.css" media="screen" rel="stylesheet" type="text/css" />        
+        <link rel="stylesheet" href="css/index.css"/>  
+        <link rel="stylesheet" href="css/jqm-datebox.min.css"/>                    
+        <title>Expresscourse.ma</title>
+        <!--<link rel="stylesheet" href="css/themes/style.css" /> -->
+        <link rel="stylesheet" href="css/themes/default.min.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/animate.min.css" /> 
+        <script src="cordova.js"></script>
+        <script data-main="js/config" src="js/require.js"></script>
+        <!--<script src="js/jqm-datebox.core.min.js"></script>
+        <script src="js/jqm-datebox.mode.calbox.min.js"></script>
+        <script src="js/jquery.mobile.datebox.i18n.fr.utf8.min.js"></script>-->
+        
+        <script>          
+          require(['app'],function(app) {
+            app.initialize();
+          });
+         
+        </script>
+    </head>
+    <body>
+        <div class="centerobject">
+            <img src="img/logo.png" alt="ExpressCourse"  />
+        </div>
+        <div class='selector'>                    
+          <ul>
+            <li class="nouvellecourse">
+              <a href="javascript:void(0)"><img src="img/add.png" alt="Nouvelle course" /></a>
+          </li>
+          <li class="tracking">                
+             <a href="trackingform.html" data-transition="pop"><img src="img/tracking.png" alt="Tracking" /></a>
+          </li>
+          <li class="historique">                
+             <a href="javascript:void(0)" ><img src="img/task-duration.png" alt="Historique" /></a>
+          </li>
+          <li class="help">
+              <a href="help.html" data-transition="flip"><img src="img/Help.png" alt="Aide" /></a>
+          </li>  
+          <li class="call">
+              <!--<input id='c5' type='checkbox'>
+              <label for='c5'>Nous contacter</label>-->
+              <a href="javascript:void(0)"><img id="imgauth" src="img/call.png" alt="Appeler" /></a>
+          </li>                
+          <li class="connexion">
+              <a href="javascript:void(0)"><img src="img/personal-256.png" alt="Connexion" /></a>
+          </li>                    
+      </ul>
+      <button data-role="none">Choisir une action</button>
+    </div>    
+    <!--<div data-role="popup" id="userpopup" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;">
+      <div class="ui-grid-a">
+        <div class="ui-block-a">
+            <a href="#" data-transition="slide-up" id="modifiercompte" class="ui-btn">Modifier mon profil</a> 
+        </div> 
+        <div class="ui-block-b">
+            <a href="#" data-transition="slide-up" id="deconnexion" class="ui-btn">Se déconnecter</a> 
+        </div> 
+    </div>    -->    
+    </body>
+</html>

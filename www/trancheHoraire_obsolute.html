@@ -1,0 +1,42 @@
+<div data-role="page" id="trancheHoraire">
+            <div data-role="header" data-position="fixed">
+                <a data-role="button" data-rel="back" href="#" data-icon="back"
+                   data-iconpos="left" class="ui-btn-left">
+                    Retour
+                </a>
+                <h4>Date de la course</h4>
+                <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
+                    <a href="#menulisttrancheHoraire" data-role="button" data-icon="bullets">Menu</a>
+                </div>
+                <!--                <div data-role="navbar" data-iconpos="right">
+                                    <ul>
+                                        <li><button data-icon="arrow-r">Etape 1</button></li>
+                                        <li><button data-icon="arrow-r" data-theme="b">Etape 2</button></li>
+                                        <li><button data-icon="arrow-r">Etape 3</button></li>
+                                    </ul>
+                                </div>-->
+            </div>
+            <!--            <div role="main" class="ui-content">
+                            <h2>Veuillez Sélectionner le jour de la course :</h2>
+                            <input type="text" data-role="date" id="datepi" data-inline="true">
+                        </div>
+                        <div data-role="footer" data-position="fixed">
+                            <div data-role="navbar" data-iconpos="top">
+                                <ul>
+                                    <li><a href="#accueil" data-transition="slide" data-icon="home" class="accueil">Accueil</a></li>
+                                    <li><a href="#typeService" data-transition="slide" data-icon="plus" class="ui-btn-active newCourse" >Nouvelle course</a></li>
+                                    <li><a href="#historique" data-transition="slide" data-icon="star" class="mesCourse">Mes courses</a></li>
+                                </ul>
+                            </div>
+                        </div>-->
+            <div data-role="panel" id="menulisttrancheHoraire" data-position="left" data-display="overlay">
+                <ul data-role="listview" data-divider-theme="b">
+                    <li class="menuTitle" data-role="list-divider"></li>
+                    <li id="updateCompte"><a href="javascript:void(0)" data-transition="slide" class="updateCompte">Modifier mon compte</a></li>
+                    <li id="deconnecter"><a href="javascript:void(0)" data-transition="slide" class="deconnecter">Déconnecter</a></li>
+                    <li><a href="#accueil" data-transition="slide">Tracking</a></li>
+                    <li><a href="javascript:void(0)" data-transition="slide" class="newCourse">Nouvelle course</a></li>
+                    <li><a href="javascript:void(0)" data-transition="slide" class="mesCourse">Mes courses</a></li>
+                </ul>
+            </div>
+        </div>

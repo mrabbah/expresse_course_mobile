@@ -1,0 +1,25 @@
+<div data-role="page" id="mescourses">
+ 
+    <div data-role="header" data-position="fixed">
+        <a data-role="button" data-rel="back" href="#" data-icon="back"
+           data-iconpos="left" class="ui-btn-left">
+            Retour
+        </a>
+        <h4>Historique</h4>
+        <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
+            <a href="index.html" data-role="button" data-icon="home">Accueil</a>
+        </div>
+    </div>
+    <div data-role="popup" id="popupMenuHistorique" data-theme="a">
+        <ul data-role="listview" data-inset="true" style="min-width:250px;">
+            <li data-role="list-divider">Choisissez une action</li>
+            <li><a href="javascript:void(0)" class="TrackerHistorique">Tracker cette course</a></li>            
+            <li><a href="javascript:void(0)" class="closepopupMenuHistorique">Fermer</a></li>
+        </ul>
+    </div>
+    <div data-role="main" class="ui-content">
+        <p>Lise de mes dix derniers courses : </p>
+        <ul data-role="listview" data-divider-theme="b" data-inset="true" id="mesCourse">                                              
+        </ul>
+    </div>              
+</div>
